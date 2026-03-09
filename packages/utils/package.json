@@ -1,0 +1,20 @@
+{
+  "name": "@alvis/utils",
+  "version": "1.0.0",
+  "description": "这是一个工具函数",
+  "keywords": [
+    "util"
+  ],
+  "author": "jie.chen",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "packageManager": "pnpm@10.31.0"
+}

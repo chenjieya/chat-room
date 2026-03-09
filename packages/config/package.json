@@ -1,0 +1,22 @@
+{
+  "name": "@alvis/config",
+  "version": "1.0.0",
+  "description": "这是该项目中的配置文件，主要包括前后端Env配置文件的校验，ts配置文件信息",
+  "keywords": [
+    "env",
+    "config",
+    "tsconfig"
+  ],
+  "author": "jie.chen",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "packageManager": "pnpm@10.31.0"
+}
