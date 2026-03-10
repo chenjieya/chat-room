@@ -15,7 +15,8 @@ export default defineConfigWithVueTs(
     '**/dist/**',
     '**/dist-ssr/**',
     '**/coverage/**',
-    'eslint.config.mjs'
+    'eslint.config.mjs',
+    'vite.config.ts'
   ]),
 
   ...pluginVue.configs['flat/essential'],
@@ -31,7 +32,7 @@ export default defineConfigWithVueTs(
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
         projectServiceOptions: {
-          allowDefaultProject: ['eslint.config.mjs']
+          allowDefaultProject: ['eslint.config.mjs', 'vite.config.ts']
         }
       }
     }

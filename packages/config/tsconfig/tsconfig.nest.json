@@ -1,0 +1,23 @@
+{
+  // NestJS 服务端专用配置，继承基础配置并启用装饰器
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // ts编译之后的代码模块方式（Node Esm）
+    "module": "nodenext", // Node 18+ 推荐
+    // ts在编译的时候如何查找模块
+    "moduleResolution": "nodenext",
+    "target": "ES2023", // 与当前 Node LTS 兼容
+    "lib": ["ES2023"],
+    // "outDir": "./dist", // 产出目录
+
+    // Nest 需要的装饰器支持
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // 生成声明文件，便于 IDE 引用与发布
+    "declaration": true,
+
+    // Node 环境类型
+    "types": ["node"]
+  }
+}

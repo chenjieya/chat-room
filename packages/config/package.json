@@ -12,11 +12,9 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    ".": {
-      "require": "./dist/index.cjs.js",
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts"
-    }
+    "./base": "./tsconfig/tsconfig.base.json",
+    "./nest": "./tsconfig/tsconfig.nest.json",
+    "./vue": "./tsconfig/tsconfig.vue.json"
   },
   "packageManager": "pnpm@10.31.0"
 }

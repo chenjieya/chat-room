@@ -1,0 +1,26 @@
+{
+  // 共享基础 TypeScript 配置，供服务端与前端项目继承
+  "compilerOptions": {
+    // 严格与质量
+    "strict": true, // 开启所有严格类型检查
+    "noImplicitAny": false, // 如需更严格可改为 true
+    "skipLibCheck": true, // 跳过声明文件检查以提升编译速度
+    "forceConsistentCasingInFileNames": true, // 文件名大小写一致
+    "noFallthroughCasesInSwitch": false, // 允许 switch 分支贯穿
+    "removeComments": true, // 生成的 JS 去除注释
+
+    // 语言与模块互操作（与运行环境相关的选项由子配置覆盖）
+    "esModuleInterop": true, // 兼容 CommonJS 默认导出
+    "allowSyntheticDefaultImports": true, // 允许没有默认导出的模块使用默认导入
+    "isolatedModules": true, // 与构建工具配合进行单文件编译
+    "resolveJsonModule": true, // 允许导入 JSON
+    "declaration": false, // 基础不生成声明文件，按需由子配置开启
+
+    // 输出与调试
+    "sourceMap": true, // 生成 source map 便于调试
+    "incremental": true, // 增量编译
+
+    // 路径与基础目录（项目内可覆盖）
+    "baseUrl": "./"
+  }
+}

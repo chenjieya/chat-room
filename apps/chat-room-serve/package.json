@@ -1,13 +1,13 @@
 {
   "name": "chat-room-serve",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "聊天系统服务端",
+  "author": "jie.chen",
   "private": true,
+  "type": "commonjs",
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -27,6 +27,8 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@alvis/auth": "workspace:*",
+    "@alvis/config": "workspace:*",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
