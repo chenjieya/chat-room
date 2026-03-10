@@ -10,7 +10,7 @@
 
 ## <a name="issue"></a> 问题和漏洞?
 
-如果您在源代码中发现错误，可以通过以下方式帮助我们： 向我们的 [GitHub](github) 仓库[提交issue](#submit-issue) 。更棒的是，您还可以…… 提交一个包含修复程序的 [Pull Request](#submit-pr) 。
+如果您在源代码中发现错误，可以通过以下方式帮助我们： 向我们的 [GitHub][github] 仓库[提交issue](#submit-issue) 。更棒的是，您还可以…… 提交一个包含修复程序的 [Pull Request](#submit-pr) 。
 
 ## <a name="feature"></a> 功能请求？
 
