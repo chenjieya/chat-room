@@ -5,13 +5,16 @@
   "description": "这是项目根目录的包管理，并不会发不到npm",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.31.0",
   "devDependencies": {
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
     "@eslint/js": "^9.39.4",
     "@types/node": "^25.3.5",
     "@vue/eslint-config-typescript": "^14.7.0",
@@ -20,12 +23,19 @@
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^16.5.0",
+    "husky": "^9.1.7",
     "jest": "^30.2.0",
+    "lint-staged": "^16.3.3",
     "prettier": "^3.8.1",
     "ts-jest": "^29.4.6",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue,tsx,jsx}": [
+      "prettier --ignore-path ./.prettierignore --write"
+    ]
   }
 }
