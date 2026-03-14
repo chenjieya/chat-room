@@ -1,0 +1,30 @@
+{
+  "name": "@alvis/http",
+  "version": "1.0.0",
+  "description": "对于axios的二次封装",
+  "keywords": [
+    "axios",
+    "http"
+  ],
+  "author": "jie.chen",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "axios": ">=1.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@10.31.0",
+  "devDependencies": {
+    "axios": "^1.13.6"
+  }
+}

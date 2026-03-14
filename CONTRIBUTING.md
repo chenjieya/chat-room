@@ -111,6 +111,7 @@ fix(utils): 修改生成唯一ID函数的bug
 - **types**: 用于在 `packages/types` 目录中所做的更改
 - **web**: 用于在 `apps/chat-room-web` 目录中所做的更改
 - **nest**: 用于在 `apps/chat-rom-serve` 目录中所做的更改
+- **http**: 用于在 `packages/http` 目录中所做的更改
 
 如果您的更改影响多个软件包，请用逗号分隔各个范围（例如 `web, nest`）。
 

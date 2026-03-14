@@ -32,7 +32,8 @@ export default {
         'config',
         'types',
         'web',
-        'nest'
+        'nest',
+        'http'
       ]
     ]
   }
