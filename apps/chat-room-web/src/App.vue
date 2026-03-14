@@ -1,4 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { createHttpClient } from '@alvis/http'
+
+const test = createHttpClient({
+  baseURL: 'http://httpbin.org/',
+  timeout: 1000
+})
+
+test.get('get').then(
+  res => console.log(res, 'res'),
+  err => console.log(err, 'err')
+)
+</script>
 
 <template>
   <h1>You did it!</h1>

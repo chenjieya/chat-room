@@ -13,6 +13,7 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "@alvis/http": "workspace:*",
     "vue": "^3.5.29"
   },
   "devDependencies": {
