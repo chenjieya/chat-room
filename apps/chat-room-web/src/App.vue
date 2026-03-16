@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { createHttpClient } from '@alvis/http'
+import { abc } from '@/api/test'
 
-const test = createHttpClient({
-  baseURL: 'http://httpbin.org/',
-  timeout: 1000
-})
-
-test.get('get').then(
-  res => console.log(res, 'res'),
-  err => console.log(err, 'err')
-)
+abc()
+abc()
+abc()
+abc()
+abc()
+abc()
+abc()
+abc()
 </script>
 
 <template>
