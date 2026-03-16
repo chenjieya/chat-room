@@ -14,7 +14,10 @@ export default {
     {
       file: 'dist/alvis-http.umd.js',
       format: 'umd',
-      name: 'alvisHttp' // umd 必须指定全局变量名
+      name: 'alvisHttp', // umd 必须指定全局变量名
+      globals: {
+        axios: 'axios'
+      }
     }
   ],
   external: ['axios'],
