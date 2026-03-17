@@ -1,0 +1,6 @@
+{
+  "extends": "@alvis/config/base",
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
