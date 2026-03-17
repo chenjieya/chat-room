@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
     "importHelpers": true,
     "noEmitHelpers": true,
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "include": ["src/**/*"], // 只包含 src 目录
   "exclude": ["node_modules", "dist"]

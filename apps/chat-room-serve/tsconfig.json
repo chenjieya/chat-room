@@ -5,6 +5,7 @@
     // 如需项目级覆盖（例如路径别名），可在此添加
     // "paths": { }
     "baseUrl": ".",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "types": ["node", "jest"]
   }
 }

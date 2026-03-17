@@ -37,7 +37,7 @@ export class ErrorFilter implements ExceptionFilter {
         // 如果响应中有自定义错误码，可以提取
         code = (exceptionResponse as any).code || status
       } else {
-        message = exception.message
+        console.log(`httpException未处理的错误🙅`)
       }
     } else if (exception instanceof Error) {
       // 处理其他 Error 类型（系统错误、数据库错误等）
