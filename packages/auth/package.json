@@ -1,6 +1,6 @@
 {
   "name": "@alvis/auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJs中的JWT授权",
   "keywords": [
     "JWT"
