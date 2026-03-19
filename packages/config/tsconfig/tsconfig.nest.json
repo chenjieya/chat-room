@@ -3,9 +3,9 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     // ts编译之后的代码模块方式（Node Esm）
-    "module": "nodenext", // Node 18+ 推荐
+    "module": "NodeNext", // Node 18+ 推荐
     // ts在编译的时候如何查找模块
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
     "target": "ES2023", // 与当前 Node LTS 兼容
     "lib": ["ES2023"],
     // "outDir": "./dist", // 产出目录
