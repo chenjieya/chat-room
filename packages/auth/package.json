@@ -1,20 +1,63 @@
 {
   "name": "@alvis/auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJs中的JWT授权",
   "keywords": [
     "JWT"
   ],
   "author": "jie.chen",
   "license": "MIT",
-  "type": "module",
-  "main": "index.js",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs.js",
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts"
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/index.esm.js",
+        "require": "./dist/index.cjs.js",
+        "types": "./dist/index.d.ts"
+      }
     }
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.0",
+    "@rollup/plugin-babel": "^7.0.0",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "rollup": "^4.59.0",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "@alvis/config": "workspace:*"
   },
   "packageManager": "pnpm@10.31.0"
 }
