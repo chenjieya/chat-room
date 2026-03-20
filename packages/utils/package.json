@@ -11,9 +11,9 @@
   "main": "index.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs.js",
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.esm.js"
     }
   },
   "packageManager": "pnpm@10.31.0"

@@ -15,19 +15,14 @@
   "author": "jie.chen",
   "license": "MIT",
   "type": "module",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
-  "publishConfig": {
-    "main": "dist/alvis-http.cjs.js",
-    "module": "dist/alvis-http.esm.js",
-    "types": "dist/types/index.d.ts",
-    "exports": {
-      ".": {
-        "import": "./dist/alvis-http.esm.js",
-        "require": "./dist/alvis-http.cjs.js",
-        "types": "./dist/types/index.d.ts"
-      }
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
     }
   },
   "peerDependencies": {
@@ -38,13 +33,7 @@
   ],
   "packageManager": "pnpm@10.31.0",
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@rollup/plugin-babel": "^7.0.0",
-    "@rollup/plugin-typescript": "^12.3.0",
-    "axios": "^1.13.6",
-    "rollup": "^4.59.0",
-    "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "axios": "^1.13.6"
   },
   "jest": {
     "moduleFileExtensions": [
