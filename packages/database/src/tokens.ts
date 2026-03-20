@@ -1,0 +1,2 @@
+export const ALVIS_DATABASE_OPTIONS = Symbol('ALVIS_DATABASE_OPTIONS')
+export const REDIS_CLIENT = Symbol('REDIS_CLIENT')

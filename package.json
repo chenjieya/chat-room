@@ -7,7 +7,7 @@
   "scripts": {
     "format": "prettier --write .",
     "prepare": "husky",
-    "dev": "node esbuild.config.mjs auth -w"
+    "dev": "node esbuild.config.mjs auth database http utils -w"
   },
   "keywords": [],
   "author": "",
