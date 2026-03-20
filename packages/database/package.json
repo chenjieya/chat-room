@@ -9,14 +9,40 @@
   ],
   "author": "jie.chen",
   "license": "MIT",
-  "type": "module",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs.js"
     }
   },
-  "packageManager": "pnpm@10.31.0"
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "redis": "^4.0.0",
+    "typeorm": "^0.3.0"
+  },
+  "devDependencies": {
+    "@alvis/config": "workspace:*",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/typeorm": "^11.0.0",
+    "redis": "^4.7.1",
+    "typeorm": "^0.3.27"
+  },
+  "packageManager": "pnpm@10.31.0",
+  "dependencies": {
+    "@alvis/utils": "workspace:*"
+  }
 }

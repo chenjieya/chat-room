@@ -1,0 +1,14 @@
+{
+  "extends": "@alvis/config/nest",
+  "compilerOptions": {
+    "declarationDir": "./dist",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "types": ["node"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
