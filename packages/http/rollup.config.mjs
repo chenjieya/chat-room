@@ -4,15 +4,15 @@ export default {
   input: 'src/index.ts', // 指定打包入口
   output: [
     {
-      file: 'dist/alvis-http.esm.js',
+      file: 'dist/index.esm.js',
       format: 'es'
     },
     {
-      file: 'dist/alvis-http.cjs.js',
+      file: 'dist/index.cjs.js',
       format: 'cjs'
     },
     {
-      file: 'dist/alvis-http.umd.js',
+      file: 'dist/index.umd.js',
       format: 'umd',
       name: 'alvisHttp', // umd 必须指定全局变量名
       globals: {
