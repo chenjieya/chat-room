@@ -1,18 +1,10 @@
 {
   "extends": "@alvis/config/nest",
   "compilerOptions": {
-    "declaration": true,
     "declarationDir": "./dist",
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
-    "strict": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
     "importHelpers": true,
     "noEmitHelpers": true,
     "types": ["node", "jest"]
