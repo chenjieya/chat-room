@@ -1,6 +1,6 @@
 {
   "name": "@alvis/http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "对于axios的二次封装",
   "keywords": [
     "axios",
